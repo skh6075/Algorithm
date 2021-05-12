@@ -9,12 +9,11 @@ public class MarathonAlgorithm<result> {
         List<String> result = not_finished(attend, complete);
 
         StringBuilder print = new StringBuilder();
-        int arrSize = result.size();
 
-        for (int index = 0; index < arrSize; index ++) {
+        for (int index = 0; index < result.size(); index ++) {
             String temp = result.get(index);
             print.append(temp);
-            if ((index + 1) != arrSize)
+            if ((index + 1) != result.size())
                 print.append(",");
         }
 
