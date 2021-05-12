@@ -84,10 +84,6 @@ public class TimeCheckAlgorithm {
             }
         }
 
-        if (pos1hour == -1) {
-            noMeat = true;
-        }
-
         if (pos1hour > pos2hour) {
             noMeat = true;
         } else if (pos1hour == pos2hour && pos1minute > pos2minute) {
