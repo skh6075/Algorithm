@@ -21,7 +21,7 @@ public class MarathonAlgorithm<result> {
         System.out.println(print);
     }
 
-    private static List<String> not_finished(String[] attend, String[] complete) { //
+    private static List<String> not_finished(String[] attend, String[] complete) {
         List<String> result = new ArrayList<>();        //결과값을 받기 위해서 변수를 선언함
         List<String> matchPlayer = new ArrayList<>();   //참가자를 넣어줌
 
