@@ -35,7 +35,7 @@ public class TimeCheckAlgorithm {
     }
 
     private static String searchMatchedTime(String[] input) {
-        boolean noMeat = false;
+        boolean noMeet = false;
 
         List<String> startTime = new ArrayList<>();
         List<String> endTime = new ArrayList<>();
@@ -85,9 +85,9 @@ public class TimeCheckAlgorithm {
         }
 
         if (pos1hour > pos2hour) {
-            noMeat = true;
+            noMeet = true;
         } else if (pos1hour == pos2hour && pos1minute > pos2minute) {
-            noMeat = true;
+            noMeet = true;
         }
 
         String resultStartHour = String.valueOf(pos1hour);
@@ -96,7 +96,7 @@ public class TimeCheckAlgorithm {
         String resultEndHour = String.valueOf(pos2hour);
         String resultEndMinute = convertMinute(pos2minute);
 
-        return noMeat ? "-1" : resultStartHour + ":" + resultStartMinute + " ~ " + resultEndHour + ":" + resultEndMinute;
+        return noMeet ? "-1" : resultStartHour + ":" + resultStartMinute + " ~ " + resultEndHour + ":" + resultEndMinute;
     }
 
     private static String convertMinute(int minute) {
