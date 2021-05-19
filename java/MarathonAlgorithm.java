@@ -8,6 +8,7 @@ public class MarathonAlgorithm<result> {
 
         List<String> result = not_finished(attend, complete);
 
+        // not used String.join
         StringBuilder print = new StringBuilder();
 
         for (int index = 0; index < result.size(); index ++) {
